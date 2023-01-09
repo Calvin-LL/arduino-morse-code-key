@@ -8,7 +8,7 @@
 // the root is null
 // each node is a character
 
-#define MORSE_CODE_TREE_SIZE (1 << MORSE_SEQUENCE_SIZE)
+#define MORSE_CODE_TREE_SIZE ((1 << MORSE_SEQUENCE_SIZE) - 1)
 
 class MorseCodeTree {
  private:
