@@ -39,7 +39,7 @@ MorseCodeTree::MorseCodeTree() {
   }
 }
 
-static size_t MorseCodeTree::getMorseCodeIndex(MorseCodeSequence s) {
+size_t MorseCodeTree::getMorseCodeIndex(MorseCodeSequence s) {
   size_t index = 0;
   for (size_t i = 0; s.sequence[i] != END; i++) {
     index = index * 2 + s.sequence[i] + 1;

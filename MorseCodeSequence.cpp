@@ -22,7 +22,7 @@ void MorseCodeSequence::print() {
   Serial.println();
 }
 
-static MorseCodeSequence MorseCodeSequence::stringToMorseCodeSequence(
+MorseCodeSequence MorseCodeSequence::stringToMorseCodeSequence(
     const char* morseCodeString) {
   MorseCodeSequence morseCodeSequence;
   for (size_t i = 0; i < MORSE_SEQUENCE_SIZE; i++) {
